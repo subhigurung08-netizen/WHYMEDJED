@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.MLAgents.Sensors;
+using Unity.MLAgents;
 
-public class MedjedAgent : MonoBehaviour
+public class MedjedAgent : BaseAgent
 {
     
     #region Exposed Instance Variables
@@ -95,4 +97,4 @@ public class MedjedAgent : MonoBehaviour
         actionsOut[1] = Input.GetAxis("Vertical"); // z
     }
 }
-}
+
