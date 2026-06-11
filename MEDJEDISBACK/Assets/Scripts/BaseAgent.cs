@@ -1,18 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BaseAgent : MonoBehaviour
+public class BaseAgent : Agent
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    protected MeshRenderer groundMeshRenderer;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    protected Material successMaterial;
+
+    [SerializeField]
+    protected Material failureMaterial;
+
+    [SerializeField]
+    protected Material defaultMaterial;
+
+    protected IEnumerator SwapGroundMaterial(Material mat, float time)
     {
-        
+        groundMeshRenderer.material = mat;
+        yield return new WaitForSeconds(time);
+        groundMeshRenderer.material = defaultMaterial;
     }
 }
+
