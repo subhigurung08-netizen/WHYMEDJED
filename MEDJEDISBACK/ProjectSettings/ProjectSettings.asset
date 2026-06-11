@@ -664,10 +664,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: bbbb31af-f0fe-477c-bb83-957cf9e32174
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: MEDJEDISBACK
+  organizationId: subhigurung08
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
