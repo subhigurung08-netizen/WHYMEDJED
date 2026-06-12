@@ -1,0 +1,36 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1781247001",
+        "python_version": "3.10.20 (main, Mar  3 2026, 00:49:35) [Clang 17.0.0 (clang-1700.6.4.2)]",
+        "command_line_arguments": "/Users/bikalgurung/Documents/GitHub/WHYMEDJED/mlagents-env/bin/mlagents-learn Assets/Config/CrossTheRoad.yaml --run-id=CrossRoadV3",
+        "mlagents_version": "0.16.1",
+        "mlagents_envs_version": "0.16.1",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.16.2",
+        "end_time_seconds": "1781247022"
+    },
+    "total": 21.258594863000326,
+    "count": 1,
+    "self": 0.49282465600117575,
+    "children": {
+        "run_training.setup": {
+            "total": 0.035136390000843676,
+            "count": 1,
+            "self": 0.035136390000843676
+        },
+        "TrainerController.start_learning": {
+            "total": 20.730633816998306,
+            "count": 1,
+            "self": 0.166853225997329,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 20.563780591000977,
+                    "count": 1,
+                    "self": 20.563780591000977
+                }
+            }
+        }
+    }
+}
